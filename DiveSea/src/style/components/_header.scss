@@ -1,0 +1,74 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 45px 0;
+
+  @include tablet {
+    padding: 30px 0;
+  }
+  @include burger {
+    padding: 15px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: clamp(1rem, 9.8462vw + -5.3015rem, 3.56rem);
+    @include tablet {
+      margin-right: clamp(1rem, 13.2896vw + -5.977rem, 2.52rem);
+    }
+    @include burger {
+      margin-right: 0;
+    }
+  }
+
+  &__nav {
+    & ul {
+      margin-right: clamp(2rem, 20.3357vw + -11.0022rem, 7.3rem);
+      @include tablet {
+        margin-right: clamp(3rem, 19.3224vw + -7.1443rem, 5.21rem);
+      }
+      @include burger {
+        margin-right: 0;
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+  &__search {
+    margin-right: clamp(1rem, 3.3654vw + -1.1538rem, 1.875rem);
+    
+    @include tablet {
+      margin-right: clamp(1rem, 2.623vw + -.377rem, 1.3rem);
+    }
+    @include burger {
+      margin-right: 0;
+      margin-bottom: 30px;
+      max-width: 350px;
+
+      & input {
+        @include burger {
+          font-size: rem(20);
+          padding: 18px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+
+    @include burger {
+      margin-left: 0;
+      font-size: rem(20);
+      padding: 20px 30px;
+    }
+  }
+
+  &__hamburger {
+    margin-left: auto;
+  }
+}

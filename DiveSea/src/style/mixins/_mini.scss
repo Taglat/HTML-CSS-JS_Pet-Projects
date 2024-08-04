@@ -8,8 +8,8 @@
 
 $browser-context: 16; // Default
 
-@function rem($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}rem;
+@function rem($pixels) {
+  @return calc($pixels / $browser-context * 1rem);
 }
 
 @mixin image-set($pathToImage) {

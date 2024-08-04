@@ -24,6 +24,12 @@
   }
 }
 
+@mixin burger {
+  @media (max-width: (840px)) {
+    @content;
+  }
+}
+
 @mixin small-tablet {
   @media (max-width: (768px)) {
     @content;
