@@ -18,6 +18,12 @@
   }
 }
 
+@mixin hero-swiper {
+  @media (max-width: (1260px)) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: (1024px)) {
     @content;

@@ -130,6 +130,16 @@
     font-size: rem(20);
     padding: 15px 25px;
   }
+
+  &_inverted {
+    background-color: $color-bg;
+    color: $color-text;
+    border: 1px solid $color-text;
+    @include hover {
+      color: $color-bg;
+      border: 0px;
+    }
+  }
 }
 
 .hamburger {

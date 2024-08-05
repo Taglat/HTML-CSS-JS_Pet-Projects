@@ -24,3 +24,14 @@ body._lock {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  font-size: rem(18);
+}
+.p {
+}

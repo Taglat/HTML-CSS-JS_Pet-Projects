@@ -26,6 +26,9 @@
   }
 
   &__nav {
+    background-color: $color-bg;
+    z-index: 5;
+    
     & ul {
       margin-right: clamp(2rem, 20.3357vw + -11.0022rem, 7.3rem);
       @include tablet {

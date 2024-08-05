@@ -1,0 +1,86 @@
+.hero {
+  overflow: hidden;
+  margin-top: 145px;
+  padding: 54px 0 143px;
+  @include tablet {
+    padding: 36px 0 101px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__body {
+    width: 45%;
+
+    & .h1 {
+      font-size: rem(75);
+      line-height: 120%;
+      margin-bottom: 16px;
+
+      @include tablet {
+        font-size: rem(53);
+      }
+    }
+
+    & .p {
+      font-size: rem(18);
+      line-height: 150%;
+      color: $color-text-gray;
+      margin-bottom: 45px;
+      max-width: 500px;
+
+      @include tablet {
+        font-size: rem(13);
+      }
+
+      & span {
+        color: $color-text;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__content {
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-bottom: 80px;
+  }
+
+  &__stats {
+  }
+}
+
+.stats {
+  display: flex;
+  row-gap: 65px;
+
+  &__item {
+    margin-right: 65px;
+  }
+}
+
+.stats-item {
+  &__title {
+    font-size: rem(36);
+    font-weight: 600;
+    margin-bottom: 6px;
+
+    @include tablet {
+      font-size: rem(26);
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(12);
+    color: $color-text-gray;
+
+    @include tablet {
+      font-size: rem(9);
+    }
+  }
+}
